@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="pocetakButtonEng">START</string>
+    <string name="naslovEng">Application for Covid-19 vaccine</string>
+    <string name="ProvjeraPrepreka">Are you currently diagnosed with Covid-19 or currently pregnant or underaged?</string>
+    <string name="ne">NO</string>
+    <string name="da">YES</string>
+    <string name="SorryStr">It is advised for you while in this state not to take the vaccine. For more info asko your doctor.</string>
+    <string name="LicniPodaci">Please insert info</string>
+    <string name="podaciIme">Full name</string>
+    <string name="podaciGod">Age</string>
+    <string name="podaciGrad">City</string>
+    <string name="podaciPrioritet">Are you one of these categories: chronic disease patient, medical worker or living in home for elderly?</string>
+    <string name="podaciVax">Chose the vaccine</string>
+    <string name="buttonAppChose">NEXT</string>
+    <string name="podaciOverview">Confirm input</string>
+    <string name="prioritetnaGrupa">Priority group</string>
+    <string name="odabranaVakcina">Chosen vaccine</string>
+    <string name="potvrdiBtn">CONFIRM</string>
+    <string name="SuccessTitle">You have successfully applied to get vaxed!</string>
+    <string name="lok">Location</string>
+    <string name="vrijeme">Time</string>
+    <string name="trenutnoPrijavljeni">Currently registered applicants</string>
+    <string name="dalje">NEXT</string>
+    <string name="labelIme">Full name</string>
+    <string name="jezik">Language</string>
+    <string name="stats">Stats</string>
+    <string name="checkTitle">Caution</string>
+    <string name="overTitle">Confirmation</string>
+    <string name="statsTitle">Statistics</string>
+    <string name="infoTitle">Language</string>
+    <string name="appTitle">Form</string>
+    <string name="mainTitle">Application for vaccination</string>
+    <string name="toast1">Enter full name!</string>
+    <string name="toast2">Enter your age!</string>
+    <string name="toast3">Enter your real age!</string>
+    <string name="toast4">Success!</string>
+    <string name="ChoseLang">Chose language</string>
+</resources>

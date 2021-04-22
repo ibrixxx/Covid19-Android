@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="naslov">
+        <item name="android:layout_width">@dimen/widthNaslov</item>
+        <item name="android:layout_height">193dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="dugme">
+        <item name="android:layout_width">@dimen/buttonWidth</item>
+        <item name="android:layout_height">@dimen/btnHeight</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:backgroundTint">@color/btnClr</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/brnClr</item>
+    </style>
+
+    <style name="radioBtn">
+        <item name="android:layout_width">297dp</item>
+        <item name="android:layout_height">227dp</item>
+        <item name="android:layout_marginBottom">252dp</item>
+    </style>
+</resources>

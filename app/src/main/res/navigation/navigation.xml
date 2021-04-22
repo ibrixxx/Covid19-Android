@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.covid19.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_checkFragment"
+            app:destination="@id/checkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkFragment"
+        android:name="com.example.covid19.CheckFragment"
+        android:label="CheckFragment"
+        tools:layout="@layout/fragment_check">
+        <action
+            android:id="@+id/action_checkFragment_to_appFragment"
+            app:destination="@id/appFragment" />
+        <action
+            android:id="@+id/action_checkFragment_to_unableFragment"
+            app:destination="@id/unableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unableFragment"
+        android:name="com.example.covid19.UnableFragment"
+        android:label="UnableFragment"
+        tools:layout="@layout/fragment_unable"/>
+    <fragment
+        android:id="@+id/appFragment"
+        android:name="com.example.covid19.AppFragment"
+        android:label="fragment_app"
+        tools:layout="@layout/fragment_app" >
+        <action
+            android:id="@+id/action_appFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.example.covid19.OverviewFragment"
+        android:label="OverviewFragment"
+        tools:layout="@layout/fragment_overview">
+        <action
+            android:id="@+id/action_overviewFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="godine"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="boolean" />
+        <argument
+            android:name="vax"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.covid19.SuccessFragment"
+        android:label="SuccessFragment"
+        tools:layout="@layout/fragment_success">
+        <action
+            android:id="@+id/action_successFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.covid19.InfoFragment"
+        android:label="InfoFragment" />
+    <fragment
+        android:id="@+id/statsFragment2"
+        android:name="com.example.covid19.StatsFragment"
+        android:label="StatsFragment" />
+</navigation>

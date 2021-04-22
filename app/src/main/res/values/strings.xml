@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="pocetakButtonEng">KRENI</string>
+    <string name="naslovEng">Prijava za vakcinaciju protiv virusa Covid-19</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="ProvjeraPrepreka">Da li trenutno bolujete od virusa Covid-19 ili ste trudni ili ste maloljetni?</string>
+    <string name="ne">NE</string>
+    <string name="da">DA</string>
+    <string name="SorryStr">Trenutno nije preporučeno da primite vakcinu. Za više informacije obratite se vašem ljekaru.</string>
+    <string name="LicniPodaci">Unesite vaše podatke</string>
+    <string name="podaciIme">Ime i prezime</string>
+    <string name="podaciGod">Godine</string>
+    <string name="podaciGrad">Grad</string>
+    <string name="podaciPrioritet">Da li pripadate nekoj od navedenih grupa: hronični bolesnici, medicinski radnici, stanovnici staračkog doma?</string>
+    <string name="podaciVax">Odaberite vakcinu</string>
+    <string name="pfizer" translatable="false">Pfizer–BioNTech</string>
+    <string name="astra" translatable="false">Oxford–AstraZeneca</string>
+    <string name="sputnik" translatable="false">Sputnik V</string>
+    <string name="sunnetfarm" translatable="false">Sinopharm</string>
+    <string name="buttonAppChose">DALJE</string>
+    <string name="podaciOverview">Potvrdite podatke</string>
+    <string name="prioritetnaGrupa">Prioritetna grupa</string>
+    <string name="odabranaVakcina">Odabrana vakcina</string>
+    <string name="potvrdiBtn">POTVRDI</string>
+    <string name="SuccessTitle">Uspješna prijava za vakcinaciju!</string>
+    <string name="lok">Lokacija</string>
+    <string name="vrijeme">Vrijeme</string>
+    <string name="trenutnoPrijavljeni">Broj trenutno prijavljenih</string>
+    <string name="dalje">DALJE</string>
+    <string name="labelIme">Puno ime</string>
+    <string name="jezik">Jezik</string>
+    <string name="stats">Statistika</string>
+    <string name="successTitle" translatable="false">Info</string>
+    <string name="checkTitle">Provjera</string>
+    <string name="overTitle">Potvrda</string>
+    <string name="statsTitle">Statistika</string>
+    <string name="infoTitle">Jezik</string>
+    <string name="appTitle">Prijava</string>
+    <string name="mainTitle">Prijava za vakcinaciju</string>
+    <string name="toast1">Unesite vaše puno ime!</string>
+    <string name="toast2">Unesite godine!</string>
+    <string name="toast3">Unesite ispravne godine!</string>
+    <string name="toast4">Uspješna prijava!</string>
+    <string name="ChoseLang">Izaberite jezik</string>
+</resources>

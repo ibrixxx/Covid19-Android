@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.AppFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/naslov"
+                android:layout_width="323dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/LicniPodaci"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="352dp"
+                android:layout_height="276dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <LinearLayout
+                    android:id="@+id/imePrez"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label1Ime"
+                        android:layout_width="117dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/podaciIme"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/imeIprez"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Godine"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label2God"
+                        android:layout_width="117dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/podaciGod"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/godineTxt"
+                        android:layout_width="163dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:editable="true"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/prioritet"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label3Prioritet"
+                        android:layout_width="181dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/podaciGrad"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/prioritetTxt"
+                        android:layout_width="230dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:editable="true"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/naslov"
+                android:layout_width="339dp"
+                android:layout_height="252dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/podaciPrioritet"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/radioPrioritet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <RadioGroup
+                android:id="@+id/radioPrioritet"
+                style="@style/radioBtn"
+                android:layout_width="259dp"
+                android:layout_height="91dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ne"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/da"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/naslov"
+                android:layout_width="347dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/podaciVax"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioPrioritet"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                style="@style/radioBtn"
+                android:layout_width="292dp"
+                android:layout_height="226dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="204dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pfizer"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/astra"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sputnik"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunnetfarm"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button"
+                style="@style/dugme"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/btnClr"
+                android:text="@string/buttonAppChose"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+                app:layout_constraintVertical_bias="0.398" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
