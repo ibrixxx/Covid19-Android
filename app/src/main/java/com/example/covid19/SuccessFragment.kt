@@ -11,8 +11,11 @@ import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.covid19.databinding.FragmentSuccessBinding
+import java.text.SimpleDateFormat
+import java.util.*
 import kotlin.random.Random
 
+const val KEY_PR = "prijavljeni"
 
 class SuccessFragment : Fragment() {
     var prijavljeni : Int = 225883
@@ -36,7 +39,10 @@ class SuccessFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentSuccessBinding>(inflater, R.layout.fragment_success, container, false)
         (activity as AppCompatActivity?)!!.supportActionBar!!.title = getString(R.string.successTitle)
-        Toast.makeText(activity,getString(R.string.toast4), Toast.LENGTH_SHORT).show()
+        if(savedInstanceState != null)
+            prijavljeni = savedInstanceState.getInt(KEY_PR)
+        else
+            Toast.makeText(activity, getString(R.string.toast4), Toast.LENGTH_SHORT).show()
         val timer: CountUpTimer = object : CountUpTimer(300000) {
             override fun onTick(second: Int) {
                 if(second % 5 == 0){
@@ -51,6 +57,17 @@ class SuccessFragment : Fragment() {
             }
         }
         timer.start()
+
+        val calendar = Calendar.getInstance()
+
+        calendar.add(Calendar.DAY_OF_YEAR, 1)
+
+        val tomorrow = calendar.time
+
+        val formatter = SimpleDateFormat("dd.MM.yyyy")
+
+        val date = formatter.format(tomorrow)
+        binding.vrijemeDat.text = date
 
         setHasOptionsMenu(true)
 
@@ -78,5 +95,10 @@ class SuccessFragment : Fragment() {
             R.id.share -> shareSuccess()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(KEY_PR, prijavljeni);
     }
 }

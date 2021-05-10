@@ -65,7 +65,7 @@
             <LinearLayout
                 android:id="@+id/Vrijeme"
                 android:layout_width="match_parent"
-                android:layout_height="93dp"
+                android:layout_height="135dp"
                 android:layout_marginBottom="25dp"
                 android:orientation="vertical">
 
@@ -86,6 +86,17 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal|center_vertical"
                     android:text="16:14 h"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vrijemeDat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Sutra"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
