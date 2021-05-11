@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/buttonBA"
+            android:id="@+id/buttonEng"
             style="@style/dugme"
             android:layout_width="178dp"
             android:layout_height="77dp"
@@ -32,10 +32,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonENG" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonBa" />
 
         <Button
-            android:id="@+id/buttonENG"
+            android:id="@+id/buttonBa"
             style="@style/dugme"
             android:layout_width="178dp"
             android:layout_height="77dp"
